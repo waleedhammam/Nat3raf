@@ -86,10 +86,11 @@ public class Dashboard extends AppCompatActivity
         na3rafNew.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 /*
                  * dummy check simulator
+                 * Add version checker after creating webserver
                  */
-                // TODO : Add version checker after creating website
                 new AlertDialog.Builder(Dashboard.this)
                         .setTitle("جديد نَتَعرّف")
                         .setMessage("لا يوجد اصدارات اخري من نتعرف حالياّ")
@@ -142,14 +143,17 @@ public class Dashboard extends AppCompatActivity
             startActivity(startWithArduinoIntent);
 
         } else if (id == R.id.download_center) {
-            // TODO 2 : Handle navigation menu item
+            Intent downloadCenter = new Intent(getApplicationContext(), DownloadCenter.class);
+            startActivity(downloadCenter);
+
         } else if (id == R.id.help) {
             Intent startWithArduinoIntent = new Intent(getApplicationContext(), DataViewer.class);
             startWithArduinoIntent.putExtra("INTENT_ITEM_NAME", "help");
             startActivity(startWithArduinoIntent);
 
         } else if (id == R.id.call_us) {
-            // TODO 4 : Handle navigation menu item
+            Intent callUs = new Intent(getApplicationContext(), CallUs.class);
+            startActivity(callUs);
 
         } else if (id == R.id.about_us) {
             Intent startWithArduinoIntent = new Intent(getApplicationContext(), DataViewer.class);

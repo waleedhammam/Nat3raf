@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download_center_background_image"
+    tools:context="com.hammam.nat3raf.DownloadCenter"
+    android:gravity="center">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent"
+        android:paddingTop="150dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/simply_arduino_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/simply_arduino_button_style" />
+
+            <Button
+                android:id="@+id/arduino_official_site_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arduino_official_site_style" />
+
+            <Button
+                android:id="@+id/arduino_simulation_book_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arduino_simulation_book_button_style" />
+
+            <Button
+                android:id="@+id/arduino_ide_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/arduino_ide_button_style" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
