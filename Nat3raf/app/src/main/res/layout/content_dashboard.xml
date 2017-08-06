@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashboard_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.hammam.nat3raf.Dashboard"
+    tools:showIn="@layout/app_bar_dashboard"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/what_is_arduino_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/what_is_arduino"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/development_environment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/development_environment"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/start_with_arduino_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/start_with_arduino"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/simple_projects_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/simple_projects"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/nat3raf_new_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nat3raf_new"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">نتعرّف</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">خيارات</string>
+    <string name="refrences_buy">المراجع والشراء</string>
+    <string name="download_center">مركز التحميل</string>
+    <string name="help">المساعدة</string>
+    <string name="call_us">اتصل بنا</string>
+    <string name="about_us">عنّا</string>
+    <string name="exit">خروج</string>
+    <string name="title_activity_data_viewer">عرض البيانات</string>
+</resources>
