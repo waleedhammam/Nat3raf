@@ -7,9 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Hammam on 8/11/2017.
- */
 
 public class QuestionsDataEntry {
 
@@ -88,9 +85,9 @@ public class QuestionsDataEntry {
         list.add(cv);
 
         cv = new ContentValues();
-        cv.put(QuestionsContract.QuestionsEntry.COLUMN_QUESTION, "لا يوجد بديل للأردوينو ؟ ");
-        cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_YES, "لا : يوجد بدائل للأردوينو مثل ال pic   وال  plc   ولكن الأردوينو يتميز بالسهوله  في التعامل ");
-        cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_NO, "إجابة صحيحة");
+        cv.put(QuestionsContract.QuestionsEntry.COLUMN_QUESTION, "هل يوجد بديل للأردوينو ؟ ");
+        cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_YES, "إجابة صحيحة");
+        cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_NO, "لا : يوجد بدائل للأردوينو مثل ال pic   وال  plc   ولكن الأردوينو يتميز بالسهوله  في التعامل ");
         list.add(cv);
 
         cv = new ContentValues();
@@ -124,7 +121,7 @@ public class QuestionsDataEntry {
         list.add(cv);
 
         cv = new ContentValues();
-        cv.put(QuestionsContract.QuestionsEntry.COLUMN_QUESTION, " لا يمكن تشغيل   Arduino IDE إلا على نظلم التشغيل ويندوز  ؟ ");
+        cv.put(QuestionsContract.QuestionsEntry.COLUMN_QUESTION, " لا يمكن تشغيل   Arduino IDE إلا على نظام التشغيل ويندوز  ؟ ");
         cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_YES, "إجابة خاطئة ، يمكن تشغيله على العديد من نظم التشغيل كاللينكس والماك");
         cv.put(QuestionsContract.QuestionsEntry.COLUMN_ANSWER_NO, "إجابة صحيحة");
         list.add(cv);
