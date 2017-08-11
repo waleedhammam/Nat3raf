@@ -36,6 +36,7 @@ public class DataViewer extends AppCompatActivity {
         setContentView(R.layout.activity_data_viewer);
 
         Intent buttonClicked = getIntent();
+
         String buttonClickedName = buttonClicked.getStringExtra("INTENT_ITEM_NAME");
 
         Log.i(TAG, buttonClickedName);

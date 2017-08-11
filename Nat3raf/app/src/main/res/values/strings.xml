@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">نتعرّف</string>
+    <string name="app_name" translatable="false">نتعرّف</string>
 
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
-    <string name="action_settings">خيارات</string>
-    <string name="refrences_buy">المراجع والشراء</string>
-    <string name="download_center">مركز التحميل</string>
-    <string name="help">المساعدة</string>
-    <string name="call_us">اتصل بنا</string>
-    <string name="about_us">عنّا</string>
-    <string name="exit">خروج</string>
-    <string name="title_activity_data_viewer">عرض البيانات</string>
+    <string name="action_settings" translatable="false">خيارات</string>
+    <string name="refrences_buy" translatable="false">المراجع والشراء</string>
+    <string name="download_center" translatable="false">مركز التحميل</string>
+    <string name="help" translatable="false">المساعدة</string>
+    <string name="call_us" translatable="false">اتصل بنا</string>
+    <string name="about_us" translatable="false">عنّا</string>
+    <string name="exit" translatable="false">خروج</string>
+    <string name="title_activity_data_viewer" translatable="false">عرض البيانات</string>
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hammam.nat3raf.QuestionsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/questions_image"
+    android:gravity="bottom">
+
+    <Button
+        android:id="@+id/test_question_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Question"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

@@ -76,9 +76,7 @@ public class Dashboard extends AppCompatActivity
             @Override
             public void onClick(View v) {
 
-                // TODO : Add experiments page
-                Intent simpleProjectsIntent = new Intent(getApplicationContext(), DataViewer.class);
-                simpleProjectsIntent.putExtra("INTENT_ITEM_NAME", "simpleProjects");
+                Intent simpleProjectsIntent = new Intent(getApplicationContext(), QuestionsActivity.class);
                 startActivity(simpleProjectsIntent);
             }
         });
