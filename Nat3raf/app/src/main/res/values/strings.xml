@@ -4,7 +4,7 @@
     <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
     <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
 
-    <string name="action_settings" translatable="false">خيارات</string>
+    <string name="action_notes" translatable="false">ملاحظات</string>
     <string name="refrences_buy" translatable="false">المراجع والشراء</string>
     <string name="download_center" translatable="false">مركز التحميل</string>
     <string name="help" translatable="false">المساعدة</string>
