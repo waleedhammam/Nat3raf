@@ -1,7 +1,6 @@
-package com.hammam.nat3raf;
+package com.hammam.nat3raf.ImagesData;
 
 import android.content.Context;
-import android.provider.ContactsContract;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -9,14 +8,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/**
- * Created by Hammam on 8/6/2017.
- */
+import com.bumptech.glide.Glide;
+import com.hammam.nat3raf.DataViewer;
+import com.hammam.nat3raf.R;
+
 
 public class ImagesAdapter extends RecyclerView.Adapter <ImagesAdapter.ImagesViewHolder> {
 
-    String TAG = ImagesAdapter.class.getSimpleName();
-
+    private String TAG = ImagesAdapter.class.getSimpleName();
+    private Context context;
     // How many image in the adapter
     private int mItemNumbers;
 
@@ -29,7 +29,7 @@ public class ImagesAdapter extends RecyclerView.Adapter <ImagesAdapter.ImagesVie
     public ImagesViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
 
         // view context
-        Context context = viewGroup.getContext();
+        context = viewGroup.getContext();
 
         // the custom layout which is an imageview
         int layoutID = R.layout.images_list_items;
@@ -67,7 +67,7 @@ public class ImagesAdapter extends RecyclerView.Adapter <ImagesAdapter.ImagesVie
         }
 
         public void bind(int position) {
-            listItemImage.setImageResource(DataViewer.imagesID[position]);
+            Glide.with(context).load(DataViewer.imagesID[position]).into(listItemImage);
         }
     }
 }

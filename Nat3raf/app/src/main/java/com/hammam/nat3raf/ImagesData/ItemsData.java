@@ -1,8 +1,7 @@
-package com.hammam.nat3raf;
+package com.hammam.nat3raf.ImagesData;
 
-/**
- * Created by Hammam on 8/6/2017.
- */
+import com.hammam.nat3raf.R;
+
 
 public class ItemsData {
 
