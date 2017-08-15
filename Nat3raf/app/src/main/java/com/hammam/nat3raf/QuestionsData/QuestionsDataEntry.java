@@ -3,10 +3,8 @@ package com.hammam.nat3raf.QuestionsData;
 import android.content.ContentValues;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
-
 import java.util.ArrayList;
 import java.util.List;
-
 
 public class QuestionsDataEntry {
 

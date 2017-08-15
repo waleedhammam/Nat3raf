@@ -1,6 +1,8 @@
 package com.hammam.nat3raf;
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,7 +10,7 @@ import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
-
+import android.widget.LinearLayout;
 import com.hammam.nat3raf.ImagesData.ImagesAdapter;
 import com.hammam.nat3raf.ImagesData.ItemsData;
 
@@ -23,9 +25,12 @@ public class DataViewer extends AppCompatActivity {
 
     private String TAG = DataViewer.class.getSimpleName();
 
+    private SharedPreferences prefs = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_data_viewer);
 
         Intent buttonClicked = getIntent();
@@ -75,12 +80,32 @@ public class DataViewer extends AppCompatActivity {
         };
 
         snapHelper.attachToRecyclerView(mImagesList);
+
+        prefs = getSharedPreferences("first_run", MODE_PRIVATE);
+        if (prefs.getBoolean("first_run", true)) {
+            showFirstTimeHelp();
+            prefs.edit().putBoolean("first_run", false).apply();
+        }
     }
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
         finish();
+    }
+
+    private void showFirstTimeHelp(){
+        final Dialog dialog = new Dialog(this, android.R.style.Theme_Translucent_NoTitleBar);
+        dialog.setContentView(R.layout.first_time_help);
+        LinearLayout layout = (LinearLayout) dialog.findViewById (R.id.first_time_help_layout);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View arg0) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+
     }
 
 }

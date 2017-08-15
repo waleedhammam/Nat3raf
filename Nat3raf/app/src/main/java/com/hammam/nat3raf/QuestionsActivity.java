@@ -9,11 +9,6 @@ import android.os.Vibrator;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
 import com.hammam.nat3raf.QuestionsData.QuestionsContract;
 import com.hammam.nat3raf.QuestionsData.QuestionsDBHelper;
 import com.hammam.nat3raf.QuestionsData.QuestionsDataEntry;
@@ -47,18 +42,19 @@ public class QuestionsActivity extends AppCompatActivity
     }
 
     private Cursor getAllQuestions() {
+        String sortBy = "RANDOM()";
         return mDB.query(QuestionsContract.QuestionsEntry.TABLE_NAME,
                 null,
                 null,
                 null,
                 null,
                 null,
-                "RANDOM()");
+                sortBy);
 
     }
 
     public void hearShake() {
-        if (flag) {
+        if (!this.isFinishing() && flag) {
             logData(cursor);
         }
     }
@@ -70,6 +66,12 @@ public class QuestionsActivity extends AppCompatActivity
                     .setTitle("نَتَعرّف")
                     .setMessage("انتهت الأسئلة")
                     .setNeutralButton("موافق",null)
+                    .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                        @Override
+                        public void onDismiss(DialogInterface dialog) {
+                            flag = true;
+                        }
+                    })
                     .setIcon(R.mipmap.ic_launcher)
                     .show();
             return;
@@ -95,6 +97,12 @@ public class QuestionsActivity extends AppCompatActivity
                     }
                 })
                 .setIcon(R.mipmap.ic_launcher)
+                .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        flag = true;
+                    }
+                })
                 .show();
 
         cursor.moveToNext();
@@ -106,9 +114,16 @@ public class QuestionsActivity extends AppCompatActivity
                 .setMessage(result)
                 .setNeutralButton("موافق", null)
                 .setIcon(R.mipmap.ic_launcher)
+                .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                    @Override
+                    public void onDismiss(DialogInterface dialog) {
+                        flag = true;
+                    }
+                })
                 .show();
         flag = true;
     }
+
     @Override
     public void onBackPressed() {
         super.onBackPressed();

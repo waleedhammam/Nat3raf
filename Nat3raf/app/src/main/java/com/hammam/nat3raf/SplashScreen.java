@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private final int x=1000;
+    private final int x = 1000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

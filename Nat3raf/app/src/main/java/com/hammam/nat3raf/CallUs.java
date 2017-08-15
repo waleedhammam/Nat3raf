@@ -54,10 +54,6 @@ public class CallUs extends AppCompatActivity {
             }
         });
 
-
-
-
-
         youTubeButton = (Button) findViewById(R.id.youtube_button);
         youTubeButton.setOnClickListener(new View.OnClickListener() {
             @Override

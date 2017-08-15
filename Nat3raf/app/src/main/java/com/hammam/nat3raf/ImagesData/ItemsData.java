@@ -2,7 +2,6 @@ package com.hammam.nat3raf.ImagesData;
 
 import com.hammam.nat3raf.R;
 
-
 public class ItemsData {
 
     private static int[] whatIsArduinoImagesID = {R.drawable.what_is_arduino_image1,
@@ -51,23 +50,30 @@ public class ItemsData {
 
         int[] data = {};
 
-        if (activityName.equals("whatIsArduino")) {
-            data = whatIsArduinoImagesID;
+        switch (activityName) {
+            case "whatIsArduino":
+                data = whatIsArduinoImagesID;
+                break;
 
-        } else if (activityName.equals("developmentEnvironment")) {
-            data = developmentEnvironmentImagesID;
+            case "developmentEnvironment":
+                data = developmentEnvironmentImagesID;
+                break;
 
-        } else if (activityName.equals("startWithArduino")) {
-            data = startWithAndroidImagesID;
+            case "startWithArduino":
+                data = startWithAndroidImagesID;
+                break;
 
-        } else if (activityName.equals("refrences_and_buy")) {
-            data = refrencesAndBuyImagesID;
+            case "refrences_and_buy":
+                data = refrencesAndBuyImagesID;
+                break;
 
-        } else if (activityName.equals("about_us")){
-            data = aboutUSImagesID;
+            case "about_us":
+                data = aboutUSImagesID;
+                break;
 
-        } else if (activityName.equals("help")){
-            data = helpImagesID;
+            case "help":
+                data = helpImagesID;
+                break;
 
         }
 
@@ -78,24 +84,30 @@ public class ItemsData {
 
         int count = 0;
 
-        if (activityName.equals("whatIsArduino")) {
-            count = WHAT_IS_ARDUINI_IMAGES_NUMBER;
+        switch (activityName) {
+            case "whatIsArduino":
+                count = WHAT_IS_ARDUINI_IMAGES_NUMBER;
+                break;
 
-        } else if (activityName.equals("developmentEnvironment")) {
-            count = DEVELOPMENT_ENVIRONMENT_IMAGES_COUNT;
+            case "developmentEnvironment":
+                count = DEVELOPMENT_ENVIRONMENT_IMAGES_COUNT;
+                break;
 
-        } else if (activityName.equals("startWithArduino")) {
-            count = START_WITH_ARDUINO_IMAGES_NUMBER;
+            case "startWithArduino":
+                count = START_WITH_ARDUINO_IMAGES_NUMBER;
+                break;
 
-        } else if (activityName.equals("refrences_and_buy")) {
-            count = REFRENCES_AND_BUY_IMAGES_COUNT;
+            case "refrences_and_buy":
+                count = REFRENCES_AND_BUY_IMAGES_COUNT;
+                break;
 
-        } else if (activityName.equals("about_us")){
-            count = ABOUT_US_IMAGES_COUNT;
+            case "about_us":
+                count = ABOUT_US_IMAGES_COUNT;
+                break;
 
-        } else if (activityName.equals("help")){
-            count = HELP_IMAGES_COUNT;
-
+            case "help":
+                count = HELP_IMAGES_COUNT;
+                break;
         }
 
         return count;

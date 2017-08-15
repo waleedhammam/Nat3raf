@@ -2,10 +2,6 @@ package com.hammam.nat3raf.QuestionsData;
 
 import android.provider.BaseColumns;
 
-/**
- * Created by Hammam on 8/11/2017.
- */
-
 public class QuestionsContract implements BaseColumns {
 
     public static final class QuestionsEntry {

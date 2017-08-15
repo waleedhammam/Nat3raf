@@ -3,11 +3,6 @@ package com.hammam.nat3raf.QuestionsData;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
-
-/**
- * Created by Hammam on 8/11/2017.
- */
 
 public class QuestionsDBHelper extends SQLiteOpenHelper {
 
