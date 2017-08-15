@@ -16,5 +16,7 @@ Android API v16
 <img src="https://user-images.githubusercontent.com/10658229/29322182-ee54f82c-81dc-11e7-9fcf-de40d45ca23c.png" width="200">
 <img src="(https://user-images.githubusercontent.com/10658229/29322184-ef275ace-81dc-11e7-8567-f2404ca9efcc.png" width="200">
 
+## Download
+[Check GITHUB Releases](https://github.com/waleedhammam/Nat3raf/releases/download/V1.0/Nat3raf.apk)
 ## Authors
 [Waleed Hammam](https://github.com/waleedhammam) | [Mohammed Ashour](https://github.com/Mohammed-Ashour)
