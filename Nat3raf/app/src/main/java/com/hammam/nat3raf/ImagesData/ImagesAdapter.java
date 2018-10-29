@@ -35,10 +35,10 @@ public class ImagesAdapter extends RecyclerView.Adapter <ImagesAdapter.ImagesVie
         int layoutID = R.layout.images_list_items;
 
         LayoutInflater inflater = LayoutInflater.from(context);
-        boolean shouldAttachToParentImediately = false;
+        boolean shouldAttachToParentImmediately = false;
 
         // create a view holder and return it
-        View view = inflater.inflate(layoutID, viewGroup, shouldAttachToParentImediately);
+        View view = inflater.inflate(layoutID, viewGroup, shouldAttachToParentImmediately);
 
         return new ImagesViewHolder (view);
     }
